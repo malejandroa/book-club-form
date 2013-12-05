@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forms</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+                    <!--
+Code and design a book club application form—the design should match the genre of your book club
+The following fields are required:
+Name (text, required)
+E-mail address (email, required, maxlength=256)
+Phone number (tel, optional)
+Address (text, required)
+City (text, required)
+Province (select, required)
+Postal Code (text, required, maxlength=7)
+What time of day would be best to meet? (time, required)
+How many books have you read this year? (number, optional)
+Describe your favourite book & author (textarea, optional)
+How much do you love this genre? (group of 5 radio buttons)
+Choose 2 of the fields and design the error states for them
+It—of course—needs to be responsive
+Validate the from using the W3 validator and TotalValidator
+Test your form with VoiceOver to make sure it’s compatible--> 
+       				
+                    
+       		<!--closing fieldset-->
+          
+	
+    <div id="header">
+    	
+        <div id="header_container">
+            
+            <div id="logo">
+            </div>	<!--closing logo-->
+            
+            
+            
+      
+            
+        
+        
+        </div><!--closing header container-->
+      	
+    
+    </div> <!--closing header-->
+    
+   
+   
+   
+   
+    <div id="wrapper">
+    	
+      
+    	
+        <div id="navigation">
+        	<div id="bar">
+            	<ul>
+                	<li><a href="home">home</a></li>
+                    <li><a href="about">about</a></li>
+                    
+                    <li><a href="contact">contact</a></li>
+                    
+                </ul>
+            </div><!--closing bar-->
+        
+        </div><!--closing navigation-->
+   		
+       <div id="textbox">
+       <p class="paragraph">All fields are required. An e-mail will be sent to you with instructions on how to validate your account.<br><br>
+       Once you follow the instructions in your e-mail, your account will be enabled and you can start recieving notices.</p>
+       </div>   
+       
+       <div class="form">
+       
+   
+            
+            
+            
+            <p class="help">Please register to recieve e-mail notices</p>
+       		
+          
+            <fieldset>
+       			
+                	<div class="field_name_container">
+                    
+                	<label for="firstname" class="check"><em>Name:<strong class="error">Please fill in</strong></em></label>
+                    <input id="firstname" name="name" type="text" class="text" placeholder="enter your name here"/><!--the imput class gives styles in css-->
+                	
+                    </div>
+            </fieldset>
+
+            
+            <fieldset>
+       			
+               		<div class="field_name_container">
+                    
+                	<label for="lastname" class="check"><em>LastName:<strong class="error">Please fill in</strong></em></label>
+       				<input id="lastname" name="lastname" type="text" class="text" placeholder="enter your last name here"/>
+                    <div class="message">
+                    
+                    
+                    </div>
+                    
+                    </div><!--closing name_container-->
+       		
+            </fieldset><!--closing fieldset-->
+            
+            <fieldset>
+       			
+                	<div class="field_name_container">
+                	
+                    <label for="address1" class="check"><em>Address1:</em></label>
+       				<input id="address1" name="address1" type="text" class="text"  placeholder="enter your address"/>
+                	
+                    </div>
+       		</fieldset><!--closing fieldset-->
+            
+            <fieldset>
+       			
+                	<div class="field_name_container">
+                	<label for="address2" class="check"><em>Address2:</em></label>
+       				<input id="address2" name="name" type="text" class="text"  placeholder="enter your address"/>
+               		</div>
+       		
+            </fieldset><!--closing fieldset-->
+       		
+            <fieldset>
+       			
+                	<div class="field_name_container">
+                    
+                	<label for="country" class="check"><em>Country:</em></label>
+       		
+                    <select id="country" name="name" class="text">
+                    	<optgroup label="Choose your Country"></optgroup>
+                        <option value="CA">Canada</option>
+                        <option value="US">United States</option>
+                        <option value="AU">Australia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="IL">Israel</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="MX">Mexico</option>
+                    </select>  
+                 
+                    </div>    
+                
+       		</fieldset><!--closing fieldset-->
+           
+           <fieldset>
+       			
+                	<div class="field_name_container">
+                    
+                	<label for="state_region" class="check"><em>State/Region:</em></label>
+       				 		
+                    <select id="state_region" name="state" class="text">
+                    	
+                        <optgroup label="Choose your State/Region"></optgroup>
+                        	
+                        <optgroup label="Canada">
+                            	<option>Alberta</option>
+                            	<option>British Columbia</option>
+                            	<option>Manitoba</option>
+                                <option>New Brunswick</option>
+                                <option>Newfoundland and Labrador</option>
+                                <option>Northwest Territories</option>
+                                <option>Nova Scotia</option>
+                                <option>Nunavut</option>
+                                <option>Ontario</option>
+                                <option>Prince Edward Island</option>
+                                <option>Quebec</option>
+                                <option>Saskatchewan</option>
+                                <option>Yukon</option>
+                               
+                        </optgroup>
+                        
+                        
+                    	
+                    
+                    </select>  <!--closing select id-->
+                
+                	</div>
+       		
+            </fieldset><!--closing fieldset-->
+       
+            <fieldset>
+       			
+                	<div class="field_name_container">
+                
+                	<label for="city" class="check"><em>City:</em></label>
+       				<input id="city" name="name" type="text" class="text"  placeholder="enter your city"/>
+                    
+                    </div>
+               
+       		</fieldset><!--closing fieldset-->
+            
+             
+       		<fieldset>
+       			
+                <div class="field_name_container">
+                
+                	<label for="name" class="check"><em>PostalCode:</em></label>
+       				<input id="postal_code" name="name" type="text" class="text" maxlength=7 placeholder="enter your postal code"/>
+                    
+                </div>
+                
+       		</fieldset><!--closing fieldset-->
+            
+            
+       		
+       		
+            <fieldset>
+       			
+                	<div class="field_name_container">
+                	
+                    <label for="email" class="check"><em>e-mail:</em></label>
+       				<input id="email" name="name" type="text" class="text" placeholder="enter your e-mail"/>
+                	
+                    </div>
+       		
+            </fieldset><!--closing fieldset-->
+            
+             <fieldset>
+       			
+                	<div class="field_name_container">
+                	
+                    <label for="time" class="check"><em>Time:</em></label>
+                    <br />
+       				<input id="time" name="time" type="time"   class="check" checked/><span class="title">What time of day would be best to meet?</span>
+                	
+                    </div>
+            </fieldset><!--closing fieldset-->
+           
+            
+              <fieldset>
+       			
+                	<div class="field_name_container">
+                	
+                    <label for="number" class="check"><em>Quantity:</em></label>
+                    <br />
+       				<input id="quantity" name="quantity" type="number"   class="check" min="0" max="1000" pattern="[8-9]*" checked/><span class="title">How many books have you read this year?</span>
+                	
+                    </div>
+            </fieldset><!--closing fieldset-->
+       		   
+             
+             
+             <fieldset>
+       			
+                	<div class="field_name_container">
+                	
+                    <label for="number" class="check"><em>Description:</em></label>
+                    <br />
+       				<input id="textarea" name="textarea" type="textarea"   class="check2" /><span class="title">Describe your favourite book & author</span>
+                	
+                    </div>
+            </fieldset><!--closing fieldset-->
+       		 <br /> <br /> <br /> <br /> 
+       		<fieldset>
+                	<div class="field_name_container">
+                	
+                    <label for="question" class="check"><em>Loving Scale:</em></label>
+                    <br />
+       				<input id="question" name="question" type="radio"    checked/><span class="title2">poor</span>
+                    <input id="question" name="question" type="radio"    /><span class="title2">moderate</span>
+                    <input id="question" name="question" type="radio"   /><span class="title2">consistent</span>
+                    <input id="question" name="question" type="radio"  /><span class="title2">extreme</span>
+                    
+
+                    </div>
+       		
+            </fieldset><!--closing fieldset-->
+             <br /> <br /> <br /> <br /> <br /> <br /> <br /> 
+             <fieldset>
+       			
+                	<div class="field_name_container" id="boxInfo">
+                	
+                    <label for="signup" class="check"><span>Please send me news, events information and latest updates</span></label>
+                    
+       				<input id="signup" name="yes" type="checkbox" class="check"/><span class="gender-title">Yes</span> 
+                    </div>
+       		
+            </fieldset><!--closing fieldset-->
+            
+            
+            <fieldset>
+       			
+                	
+                	<input id="submit" type="submit" />
+                   <div class="message"></div>
+       		
+            </fieldset><!--closing fieldset-->
+       
+       	</form><!--closing form-->
+       	
+      </div> <!--closing div class="form"-->		
+       
+       
+       
+       
+       
+       
+ </div><!--closing wrapper-->
+
+ 	
+</body>
+</html>
